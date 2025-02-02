@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 const flowbite = require("flowbite-react/tailwind");
+
 export default {
   content: [
     "./index.html",
@@ -7,7 +8,11 @@ export default {
     "node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'rubik': ['Rubik'],
+      },
+    },
   },
   plugins: [flowbite.plugin(), require("daisyui")],
 };
